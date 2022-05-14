@@ -1,0 +1,137 @@
+@media screen and (max-width: 768px){
+    /*Menu*/
+    #navbar{
+        height: auto;
+        position: static;
+        opacity: 0.9;
+    }
+
+    #navbar-container{        
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    #navbar-links{
+        width: 50%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navbar-links li:nth-child(2){
+        border-top: 1px solid #d3b7d5;
+    }
+    #navbar-links li:nth-child(3){
+        border-top: 1px solid #d3b7d5;
+        border-bottom: 1px solid #d3b7d5;
+    }
+
+    /*HEADER*/
+    #header{
+        height: auto;
+        padding: 10px;
+    }
+
+    #header-container{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-container-left{
+        width: 90%;
+        padding: 0;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+    .header-container-right{
+        width: 90%;
+        align-self: center;
+    }
+    .header-container-right img{
+        width: 100%;
+    }
+
+    .sobre-container{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sobre-container-left{
+        width: 100%;
+        align-self: center;
+    }
+
+    .sobre-container-right{
+        width: 80%;
+    }
+
+    .sobre-container-right figure img{
+        width: 100%;
+    }
+
+    .funcionamento-container1{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .funcionamento-container2{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .funcionamento-texto{
+        width: 90%;
+        align-self: center;
+    }
+
+    .funcionamento-video{
+        width: 100%;
+    }
+
+    .funcionamento-video iframe{
+        width: 100%;
+    }
+
+    .bitcoin-container{
+        width: 90%;
+    }
+
+    .blockchain-img img{
+        width: 20%;
+    }
+
+    .noticias-container{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .noticia{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    #links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links-importantes{
+        width: 90%;
+        padding: 0;
+        align-items: left;
+        margin-bottom: 30px;
+    }
+
+    .redes-sociais{
+        width: 90%;
+    }
+
+
+}

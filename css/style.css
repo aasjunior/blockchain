@@ -1,0 +1,367 @@
+/*Variáveis*/
+:root{
+    /*Cores*/
+    --cor-font1: #eee;
+    --cor-botao:  #840ec9;
+    --cor-menu: #222;
+    --cor-header: #222;
+    --cor-footer: #333;
+
+    /*Fonts*/
+    --font-light: poppinslight;
+    --font-regular: poppinsregular; 
+    --font-medium: poppinsmedium;
+    --font-semibold: poppinssemibold;
+    --font-black: poppinsblack;
+    --font-bold: poppinsbold;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-regular);
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; /*herda cor de fonte do elemento pai*/
+}
+
+ul{
+    list-style: none;
+}
+
+/*Menu*/
+#navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    background: var(--cor-menu);
+    color: var(--cor-font1);
+    position: fixed;
+    z-index: 11;
+}
+
+#navbar-container{
+    width: 80%;
+    height: 100%;
+    margin: auto; /*Centraliza elemento com o elemento-pai*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-links{
+    display: flex;
+    list-style: none;
+}
+
+#navbar-links li{
+    padding: 10px;
+}
+
+#navbar-links li a:hover{
+    color: var(--cor-botao);
+    transition: 0.3s all;
+}
+
+/*Cabeçalho*/
+#header{
+    top: 6vh;
+    left: 0;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--cor-font1);
+    background: var(--cor-header);
+}
+
+#header-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#header h1{
+    font-size: 2.5rem;
+
+}
+
+#header p{
+    margin: 15px 0;
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+.header-container-left{
+    top: 5vh;
+    left: 0;
+    width: 50%;
+    padding: 60px;
+    text-align: left;
+}
+
+.header-container-right{
+    top: 5vh;
+    right: 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container-right img{
+    width: 80%;
+}
+
+.header-button{
+    padding: 10px;
+    border: 2px solid var(--cor-botao);
+    border-radius: 15px;
+    background-color: transparent;
+    color: var(--cor-font1);
+    font-family: var(--font-regular);
+    font-size: 20px;
+}
+
+.header-button:hover{
+    background-color: var(--cor-botao);
+    transform: scale(1.1);
+    transition: 0.3s all;   
+}
+
+
+#main{
+    bottom: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobre-container{
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sobre-container-left{
+    width: 80%;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.sobre-container-left h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.sobre-container-left p{
+    margin-bottom: 15px;
+}
+
+.sobre-container-right{
+    right: 0;
+    width: 40%;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+.sobre-container-right figure img{
+    width: 100%;
+}
+
+#funcionamento{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.funcionamento-container1{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #F8F8FF;
+}
+
+.funcionamento-texto{
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.funcionamento-texto p{
+    margin: 10px 0 10px 0;
+}
+
+.funcionamento-video{
+    width: 40%;
+    padding: 30px 15px;
+    align-items: center;
+}
+
+.funcionamento-container2{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bitcoin{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.bitcoin-container{
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bitcoin-container h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.bitcoin-container p{
+    margin-bottom: 15px;
+}
+
+.blockchain-img{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blockchain-img img{
+    height: auto;
+    width: 80px;
+    margin: 15px;
+    align-self: center;
+}
+
+#noticias{
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--cor-font1);
+    text-align: center;
+    background: #444;   
+}
+
+#noticias h2{
+    margin: 30px 0 30px;
+}
+
+.noticias-container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.noticia{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.noticia p{
+    margin: 10px 0;
+}
+
+/*Rodapé*/
+#footer{
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    background: var(--cor-footer);
+    color: var(--cor-font1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#links{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    border-bottom: 1px solid #eee;
+}
+
+.links-importantes{
+    width: 30%;
+    text-align: left;
+}
+
+.links-importantes ul{
+    padding: 0;
+    margin: 0;
+}
+
+#links h3{
+    margin-bottom: 15px;
+}
+
+#links a:hover{
+    color: var(--cor-botao);
+}
+
+.redes-sociais{
+    width: 50%;
+    align-items: left;
+}
+
+.redes-sociais img{
+    width: 40px;
+    margin: 5px;
+}
